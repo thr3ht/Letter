@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Unity Web Player | Letter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
@@ -14,7 +14,7 @@
     }
 
     #top-spacer {
-      height: 60px; /* ← отступ сверху */
+      height: 60px; /* отступ сверху */
     }
 
     #unity-canvas {
@@ -40,9 +40,9 @@
   <script src="Build/Letter.loader.js"></script>
   <script>
     createUnityInstance(document.querySelector("#unity-canvas"), {
-      dataUrl: "Build/Letter.data",
-      frameworkUrl: "Build/Letter.framework.js",
-      codeUrl: "Build/Letter.wasm",
+      dataUrl: "Build/Letter.data.gz",
+      frameworkUrl: "Build/Letter.framework.js.gz",
+      codeUrl: "Build/Letter.wasm.gz",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "Letter",
